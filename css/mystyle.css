@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: "メイリオ", sans-serif;
+    font-size: 120%;
+    margin: 0;
+    line-height: 1.8;
+}
+
+header {
+    background-color: #ffe48b;
+    padding: 20px;
+    height: 180px;
+}
+
+.logo {
+    float: left;
+    width: 180px;
+}
+
+header h1 {
+    color: #f67708;
+    font-size: 250%;
+    font-weight: bold;
+    margin-left: 220px;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 220px;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+}
+
+article {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.mainimg {
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    border: 5px solid #cccccc;
+    border-radius: 15px;
+}
+
+article h1 {
+    color: #f67708;
+    text-shadow: 2px 2px 4px #999999;
+}
+
+.subhead {
+    background-color: #056bfa;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.content section {
+    margin-bottom: 30px;
+}
+
+footer {
+    clear: both;
+    background-color: #c0c0c0;
+    text-align: center;
+    padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        height: auto;
+        text-align: center;
+    }
+
+    .logo {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    header h1,
+    nav ul {
+        margin-left: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    body {
+        font-size: 100%;
+    }
+}
+.subhead {
+    background-color: #056bfa;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+.content {
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #eef6ff);
+}
+.content ul {
+    list-style-image: url('../image/marker.png');
+    margin-left: 40px;
+}
+.breadcrumb {
+    margin: 10px 0;
+}
+.breadcrumb li {
+    display: inline;
+}
+
+/* リンクの状態別スタイル（text-decorationプロパティの使用） */
+a:link {
+    color: #056bfa;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #8a4baf;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f67708;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+/* 目次 */
+.toc {
+    background-color: #eef6ff;
+    border: 1px solid #056bfa;
+    border-radius: 10px;
+    padding: 15px 30px;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.toc h2 {
+    color: #056bfa;
+    margin-top: 0;
+}
+
+.toc ul {
+    margin: 0;
+    padding-left: 20px;
+}
